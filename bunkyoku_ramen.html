@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文京区ラーメンガイド | 食べログ情報まとめ</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #bf0000;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .summary {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        .shop-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            position: relative;
+            transition: transform 0.2s;
+            background-color: white;
+        }
+        .shop-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .rank {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 40px;
+            height: 40px;
+            background-color: #bf0000;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .shop-name {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-left: 30px;
+            font-size: 1.5em;
+            color: #bf0000;
+        }
+        .shop-rating {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #ff6600;
+        }
+        .shop-details {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .shop-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        .shop-types {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .shop-type {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .budget-section {
+            margin-top: 30px;
+        }
+        .budget-category {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .access-area {
+            margin-top: 30px;
+        }
+        .area-name {
+            background-color: #eee;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-left: 4px solid #bf0000;
+        }
+        .area-shops {
+            margin-left: 20px;
+        }
+        @media (max-width: 768px) {
+            .shop-details {
+                flex-direction: column;
+            }
+            .shop-info {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>文京区ラーメンガイド</h1>
+            <p>食べログからのおすすめ店舗情報まとめ</p>
+        </header>
+
+        <div class="summary">
+            <h2>概要</h2>
+            <p>食べログに掲載されている文京区のラーメン・つけ麺店舗の情報をまとめました。全126店舗中、評価の高い店舗を中心に紹介します。</p>
+            <ul>
+                <li><strong>エリア</strong>: 東京都文京区</li>
+                <li><strong>掲載店舗数</strong>: 126店舗</li>
+                <li><strong>口コミ数</strong>: 30,121,640件</li>
+            </ul>
+        </div>
+
+        <h2>評価ランキング上位店舗</h2>
+
+        <div class="shop-card">
+            <div class="rank">1</div>
+            <h3 class="shop-name">神名備（かんなび）</h3>
+            <div class="shop-details">
+                <div class="shop-info">
+                    <p><span class="shop-rating">評価: 3.84</span> / 口コミ: 1,275人</p>
+                    <p><strong>ジャンル</strong>: ラーメン</p>
+                    <p><strong>場所</strong>: 文京区千駄木4-21-3</p>
+                    <p><strong>最寄駅</strong>: 西日暮里駅 569m</p>
+                    <p><strong>予算</strong>: ￥1,000～￥1,999</p>
+                    <p><strong>定休日</strong>: 月曜日、火曜日</p>
+                    <p><a href="https://tabelog.com/tokyo/A1311/A131105/13006070/" target="_blank">食べログで詳細を見る</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop-card">
+            <div class="rank">2</div>
+            <h3 class="shop-name">豊栄（ほうえい）</h3>
+            <div class="shop-details">
+                <div class="shop-info">
+                    <p><span class="shop-rating">評価: 3.75</span> / 口コミ: 243人</p>
+                    <p><strong>ジャンル</strong>: 中華料理、四川料理、担々麺</p>
+                    <p><strong>場所</strong>: 文京区本駒込3-1-8 COCOPLUS本駒込 1F</p>
+                    <p><strong>最寄駅</strong>: 本駒込駅 146m</p>
+                    <p><strong>予算</strong>: 夜￥8,000～￥9,999 / 昼￥5,000～￥5,999</p>
+                    <p><a href="https://tabelog.com/tokyo/A1323/A132301/13276558/" target="_blank">食べログで詳細を見る</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop-card">
+            <div class="rank">3</div>
+            <h3 class="shop-name">麺屋 ねむ瑠</h3>
+            <div class="shop-details">
+                <div class="shop-info">
+                    <p><span class="shop-rating">評価: 3.75</span> / 口コミ: 1,665人</p>
+                    <p><strong>ジャンル</strong>: ラーメン</p>
+                    <p><strong>場所</strong>: 文京区本郷4-3-2</p>
+                    <p><strong>最寄駅</strong>: 本郷三丁目駅 121m</p>
+                    <p><strong>予算</strong>: ￥1,000～￥1,999</p>
+                    <p><strong>人気メニュー</strong>: バカニボ（ブランド煮干しを使った濃厚スープ）</p>
+                    <p><a href="https://tabelog.com/tokyo/A1310/A131004/13186981/" target="_blank">食べログで詳細を見る</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop-card">
+            <div class="rank">4</div>
+            <h3 class="shop-name">hide mode</h3>
+            <div class="shop-details">
+                <div class="shop-info">
+                    <p><span class="shop-rating">評価: 3.67</span> / 口コミ: 412人</p>
+                    <p><strong>ジャンル</strong>: ハンバーガー、ビストロ、ラーメン</p>
+                    <p><strong>場所</strong>: 文京区本郷2-30-10 コーラルコート 1F</p>
+                    <p><strong>最寄駅</strong>: 本郷三丁目駅 175m</p>
+                    <p><strong>予算</strong>: 夜￥4,000～￥4,999</p>
+                    <p><strong>特徴</strong>: フレンチ歴30年のシェフが創る絶品ラーメン・塩バーガー</p>
+                    <p><a href="https://tabelog.com/tokyo/A1310/A131004/13222449/" target="_blank">食べログで詳細を見る</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop-card">
+            <div class="rank">5</div>
+            <h3 class="shop-name">はぐれ雲</h3>
+            <div class="shop-details">
+                <div class="shop-info">
+                    <p><span class="shop-rating">評価: 3.58</span> / 口コミ: 659人</p>
+                    <p><strong>ジャンル</strong>: ラーメン、つけ麺</p>
+                    <p><strong>場所</strong>: 文京区本郷1-34-5 寿々屋ビル 1F</p>
+                    <p><strong>最寄駅</strong>: 後楽園駅 246m</p>
+                    <p><strong>予算</strong>: ～￥999</p>
+                    <p><strong>特徴</strong>: 「貝麺 期間限定で復活！」数種類の貝をコトコト煮出した絶品スープ</p>
+                    <p><a href="https://tabelog.com/tokyo/A1310/A131004/13164299/" target="_blank">食べログで詳細を見る</a></p>
+                </div>
+            </div>
+        </div>
+
+        <h2>店舗タイプ分類</h2>
+        <div class="shop-types">
+            <div class="shop-type">
+                <h3>純粋なラーメン専門店</h3>
+                <ul>
+                    <li>神名備</li>
+                    <li>麺屋 ねむ瑠</li>
+                    <li>はぐれ雲</li>
+                    <li>俺の生きる道 白山</li>
+                    <li>麺や 穂ころび</li>
+                </ul>
+            </div>
+            <div class="shop-type">
+                <h3>中華料理店のラーメン</h3>
+                <ul>
+                    <li>豊栄</li>
+                    <li>栄児 家庭料理</li>
+                    <li>毛家麺店</li>
+                    <li>中華料理 龍騰</li>
+                </ul>
+            </div>
+            <div class="shop-type">
+                <h3>創作・フュージョン系</h3>
+                <ul>
+                    <li>hide mode</li>
+                    <li>自家製麺 MENSHO TOKYO</li>
+                    <li>ラーメン＆酒バル 麺屋一燈</li>
+                </ul>
+            </div>
+            <div class="shop-type">
+                <h3>担々麺・刀削麺専門店</h3>
+                <ul>
+                    <li>毛家麺店</li>
+                    <li>栄児 家庭料理</li>
+                    <li>星宿飯店（刀削麺）</li>
+                    <li>刀削麺・火鍋・西安料理 XI'AN</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="budget-section">
+            <h2>予算帯別おすすめ店</h2>
+            <div class="budget-category">
+                <h3>リーズナブル（〜￥999）</h3>
+                <table>
+                    <tr>
+                        <th>店名</th>
+                        <th>評価</th>
+                        <th>最寄駅</th>
+                        <th>特徴</th>
+                    </tr>
+                    <tr>
+                        <td>はぐれ雲</td>
+                        <td>3.58</td>
+                        <td>後楽園駅</td>
+                        <td>貝ベースのラーメン「貝麺」が人気</td>
+                    </tr>
+                    <tr>
+                        <td>麺処 大沼</td>
+                        <td>3.46</td>
+                        <td>湯島駅</td>
+                        <td>つけ麺、ラーメン専門店</td>
+                    </tr>
+                    <tr>
+                        <td>らーめん味来 本駒込店</td>
+                        <td>3.10</td>
+                        <td>本駒込駅</td>
+                        <td>ボリューム満点の味噌ラーメンが人気</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="budget-category">
+                <h3>スタンダード（￥1,000〜￥1,999）</h3>
+                <table>
+                    <tr>
+                        <th>店名</th>
+                        <th>評価</th>
+                        <th>最寄駅</th>
+                        <th>特徴</th>
+                    </tr>
+                    <tr>
+                        <td>神名備</td>
+                        <td>3.84</td>
+                        <td>西日暮里駅</td>
+                        <td>濃厚醤油ラーメンが人気</td>
+                    </tr>
+                    <tr>
+                        <td>麺屋 ねむ瑠</td>
+                        <td>3.75</td>
+                        <td>本郷三丁目駅</td>
+                        <td>「バカニボ」と呼ばれるブランド煮干し使用</td>
+                    </tr>
+                    <tr>
+                        <td>俺の生きる道 白山</td>
+                        <td>3.60</td>
+                        <td>白山駅</td>
+                        <td>ニンニク強めの濃厚系ラーメン</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="budget-category">
+                <h3>プレミアム（￥3,000〜）</h3>
+                <table>
+                    <tr>
+                        <th>店名</th>
+                        <th>評価</th>
+                        <th>最寄駅</th>
+                        <th>特徴</th>
+                    </tr>
+                    <tr>
+                        <td>豊栄</td>
+                        <td>3.75</td>
+                        <td>本駒込駅</td>
+                        <td>高級中華料理店の絶品担々麺</td>
+                    </tr>
+                    <tr>
+                        <td>hide mode</td>
+                        <td>3.67</td>
+                        <td>本郷三丁目駅</td>
+                        <td>フレンチの技法を取り入れた創作ラーメン</td>
+                    </tr>
+                    <tr>
+                        <td>中国菜館 志苑</td>
+                        <td>3.31</td>
+                        <td>水道橋駅</td>
+                        <td>本格中華の担々麺</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="access-area">
+            <h2>エリア別おすすめ店舗</h2>
+            
+            <div class="area">
+                <h3 class="area-name">本郷三丁目駅周辺</h3>
+                <div class="area-shops">
+                    <p><strong>hide mode</strong> - フレンチ歴30年のシェフによる創作ラーメン</p>
+                    <p><strong>麺屋 ねむ瑠</strong> - 「バカニボ」と呼ばれる煮干しラーメンが人気</p>
+                    <p><strong>麺や 穂ころび</strong> - 実力派の本格ラーメン店</p>
+                    <p><strong>栄児 家庭料理</strong> - 名物汁なし担々麺が評判</p>
+                </div>
+            </div>
+            
+            <div class="area">
+                <h3 class="area-name">千駄木・根津エリア</h3>
+                <div class="area-shops">
+                    <p><strong>神名備</strong> - 文京区No.1評価の人気ラーメン店</p>
+                    <p><strong>毛家麺店</strong> - 本格担々麺の人気店</p>
+                    <p><strong>中華料理 龍騰</strong> - 根津駅近くの四川料理店</p>
+                </div>
+            </div>
+            
+            <div class="area">
+                <h3 class="area-name">後楽園・水道橋エリア</h3>
+                <div class="area-shops">
+                    <p><strong>はぐれ雲</strong> - 貝ベースの「貝麺」が特徴</p>
+                    <p><strong>自家製麺 MENSHO TOKYO</strong> - ラム骨×豚骨のダブルスープラーメン</p>
+                    <p><strong>中国菜館 志苑</strong> - リーズナブルな本格中華の担々麺</p>
+                    <p><strong>ラーメン＆酒バル 麺屋一燈</strong> - 名店とのコラボによる新スタイルのラーメン</p>
+                </div>
+            </div>
+            
+            <div class="area">
+                <h3 class="area-name">白山・本駒込エリア</h3>
+                <div class="area-shops">
+                    <p><strong>俺の生きる道 白山</strong> - 白山駅近くの人気店</p>
+                    <p><strong>豊栄</strong> - 本駒込駅から徒歩約50歩の高級中華料理店</p>
+                    <p><strong>らーめん味来 本駒込店</strong> - ボリューム満点のラーメン店</p>
+                </div>
+            </div>
+            
+            <div class="area">
+                <h3 class="area-name">湯島・御徒町エリア</h3>
+                <div class="area-shops">
+                    <p><strong>湯島らーめん</strong> - 冷やし中華も人気</p>
+                    <p><strong>麺処 大沼</strong> - リーズナブルながら評価の高いラーメン店</p>
+                    <p><strong>餃子市場 東大前店</strong> - 餃子と一緒に楽しめる担々麺</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>データ出典: 食べログ 文京区ラーメン・つけ麺情報</p>
+            <p>※このページは個人的にまとめたものであり、公式なものではありません。</p>
+        </footer>
+    </div>
+</body>
+</html>
